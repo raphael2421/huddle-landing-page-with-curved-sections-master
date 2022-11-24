@@ -13,6 +13,7 @@
     "sass": "^1.56.1"
   },
   "scripts": {
-    "dev": "live-server ."
+    "dev": "live-server .",
+    "start": "concurrently  \" live-server src/\" \"sass -w src/styles/main.scss src/styles/index.css \""
   }
 }
