@@ -1,4 +1,23 @@
 .btn{
-    background-color:blue;
-    font-size:4rem;
+ background-color: $pink; 
+ border-radius: 40px;
+ color:$white;
+ border-style: none;
+ padding: 25px 100px 25px 100px;
+ &--rectangular{
+  border-radius: 5px;
+  padding: 12px 41px 12px 41px;
+  }
+  &--outlined {
+    background-color: $white;
+    color: $pink;
+    border-radius: 20px;
+    border-color: $pink;
+    border-style: solid;
+    border-width: 1px;
+    padding: 9px 30px 9px 30px;
+
+
+  }
+
 }
