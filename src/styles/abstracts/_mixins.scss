@@ -11,7 +11,5 @@
 }
 
 @mixin text-alignment($gap, $text-align: left) {
-    display: grid;
     $text-align: $text-align;
-    gap: $gap;
 }
