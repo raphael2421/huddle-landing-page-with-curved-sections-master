@@ -1,2 +1,29 @@
-@import "abstracts/variables";
+//abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/breakpoints';
+
+//base 
+@import 'base/base';
+@import 'base/typography';
+
+//components
 @import "components/button"; 
+
+//layout
+@import 'layout/footer';
+
+#background {
+    position: relative;
+}
+
+#background::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 150px;
+    background-image: url(../images/bg-footer-top-desktop.svg);
+}
