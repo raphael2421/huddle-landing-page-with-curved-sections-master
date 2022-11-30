@@ -1,0 +1,32 @@
+.btn{
+  @include headers(2rem,3rem);
+  font-family: $font-paragraph;
+ background-color: $pink; 
+ border-radius: 40px;
+ color:$white;
+ border-style: none;
+ padding: 25px 100px 25px 100px;
+ &:hover {
+  background-color: $pink_hover;
+  cursor: pointer;
+ }
+ &--rectangular{
+  @include body(1.6rem, 2.4rem);
+  border-radius: 5px;
+  padding: 12px 41px 12px 41px;
+  }
+  &--outlined {
+    @include body(1.6rem,1rem);
+    background-color: $white;
+    color: $pink;
+    border-radius: 20px;
+    border-color: $pink;
+    border-style: solid;
+    border-width: 1px;
+    padding: 9px 30px 9px 30px;
+    background-color: transparent;
+
+
+  }
+
+}
