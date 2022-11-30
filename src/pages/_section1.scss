@@ -1,0 +1,5 @@
+.first-section{
+    &__title{
+        @include h1;
+            }
+    }
