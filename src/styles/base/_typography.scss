@@ -29,26 +29,37 @@ $weights: (
 }
 
 @mixin p {
-    @include body(8.4rem 9.6rem);
-    font-family: $font-paragraph;
-}
-
-@mixin button{
-    @include headers(1.2rem, 1.8rem);
+    @include body(2rem, 3rem);
     font-family: $font-paragraph;
 }
 
 @mixin number {
-    @include header(9.2rem, 1rem);
+    @include header(9.6rem, 14.4rem);
     font-family: $font-paragraph;
 }
 
+@mixin h2 {
+    @include headers(4rem, 6rem);
+    font-family: $font-title;
+}
+
+
 @mixin p2 {
-    @include body(2.3rem, 1.5rem);
+    @include body(1.6rem, 2.4rem);
     font-family: $font-paragraph;
+}
+
+@mixin h3 {
+    @include headers(2.4rem, 3.6rem);
+    font-family: $font-title;
 }
 
 @mixin p3 {
-    @include body-footer(9rem, 4.6rem);
+    @include body-footer(1.4rem, 2.4rem);
+    font-family: $font-paragraph;
+}
+
+@mixin p4 {
+    @include body(1.6rem, 2.4rem);
     font-family: $font-paragraph;
 }
