@@ -1,0 +1,8 @@
+.second-section{
+    &__title{
+        @include h2;
+    }
+    &__paragraph{
+        @include p2;
+    }
+}

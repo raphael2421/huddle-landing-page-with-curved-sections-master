@@ -1,22 +1,18 @@
-.btn {
-  background-color: #FF52C1;
-  border-radius: 40px;
-  color: #FFF;
-  border-style: none;
-  padding: 25px 100px 25px 100px;
-}
-.btn--rectangular {
-  border-radius: 5px;
-  padding: 12px 41px 12px 41px;
-}
-.btn--outlined {
-  background-color: #FFF;
-  color: #FF52C1;
-  border-radius: 20px;
-  border-color: #FF52C1;
-  border-style: solid;
-  border-width: 1px;
-  padding: 9px 30px 9px 30px;
-}
+/* Error: Undefined mixin.
+ *   ,
+ * 2 |   @include headers(2rem,3rem);
+ *   |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   src/styles/components/_button.scss 2:3  @import
+ *   src/styles/main.scss 2:9                root stylesheet */
 
-/*# sourceMappingURL=index.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a   \2577 \a 2 \2502    @include headers(2rem,3rem);\a   \2502    ^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   src/styles/components/_button.scss 2:3  @import\a   src/styles/main.scss 2:9                root stylesheet";
+}
