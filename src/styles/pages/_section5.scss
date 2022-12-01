@@ -1,0 +1,11 @@
+.section5{
+    &__title{
+        @include h2;
+    }
+
+    
+    &__btn{
+@include p;
+
+    }    
+}
