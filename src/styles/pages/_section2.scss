@@ -1,8 +1,48 @@
-.second-section{
-    &__title{
-        @include h2;
-    }
-    &__paragraph{
-        @include p2;
-    }
+@import "../abstracts/mixins";
+
+.second-section-1 {
+  @include flex(column, 0);
+  &__imgbg {
+    background: white;
+  }
+  &__fondo {
+    @include flex(row, 0);
+    /* background: #f6fbff;*/
+    padding: 3%;
+    background: #f6fbff;
+    align-items: center;
+  }
+
+  &__title {
+    @include h2;
+    padding-bottom: 13px;
+  }
+  &__paragraph {
+    @include p2;
+  }
+  &__group {
+    align-items: center;
+    padding: 10%;
+  }
+}
+
+.second-section-2 {
+  @include flex(column, 0);
+  &__fondo {
+    @include flex(row, 0);
+    background: white;
+    align-items: center;
+    padding: 3%;
+  }
+  &__title {
+    @include h2;
+    padding-bottom: 13px;
+  }
+  &__paragraph {
+    @include p2;
+  }
+  &__group {
+    align-items: center;
+    padding: 5%;
+  }
 }
