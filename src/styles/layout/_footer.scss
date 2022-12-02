@@ -5,9 +5,9 @@
   flex-direction: row-reverse;
   gap: 340px;
   place-items: center;
-  grid-template-areas: "logo" "phone" "email" "icons" "p3" "input" "p";
   color: $white;
   @include h3;
+
   &__logo {
     grid-area: logo;
     width: 96px;
@@ -16,12 +16,14 @@
     }
   }
   &__input {
+    grid-area: input;
     display: flex;
     gap: 40px;
     margin-block-start: 40px;
   }
   &__p {
     @include p;
+    grid-area: p;
     margin-bottom: 16px;
   }
 
@@ -46,73 +48,126 @@
     grid-area: p3;
     @include p3;
   }
+}
 
-  @include respond-to("large") {
-    align-items: flex-start;
+@include respond-to("small") {
+  .footer {
+    padding: 64px 24px 28px;
+    display: grid;
+    gap: 104px;
+    place-items: center;
     grid-template-areas:
-      "logo logo . . . . . . . . . . . .  p"
-      "p3 p3 p3 . . . . .  . .  . . . . . p3"
-      "phone p3 . . . . . .  . . . . . . . input"
-      "email p3 . . . . . . . . .. . . ..  "
-      "icons . . . . . .  . . ..  . . . . . .";
-    gap: 0px;
+      "p"
+      "p3"
+      "input"
+      "btn"
+      "logo"
+      "p3"
+      "email"
+      "phone"
+      "icons";
 
     &__logo {
-      width: 240px;
+      grid-area: logo;
+      width: 96px;
+      svg path:nth-child(2) {
+        fill: white;
+      }
     }
 
     &__p3 {
+      grid-area: p3;
       gap: 40px;
     }
 
     &__p {
+      grid-area: p;
       gap: 40px;
     }
 
     &__icons {
-      justify-self: flex-start;
+      grid-area: icons;
+      width: 24px;
+      display: -webkit-inline-box;
     }
 
     &__email {
+      grid-area: email;
       width: 24px;
     }
 
     &__phone {
-      width: 24px;
+      grid-area: phone;
+    }
+
+    &__input {
+      grid-area: input;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    &__btn {
+      grid-area: btn;
+      width: 160px;
+      height: 48px;
+      align-self: end;
     }
   }
+}
 
-  @include respond-to("small") {
-    padding: 28px 28px;
-    grid-template-areas:
-      "p3"
-      "p"
-      "input"
-      "logo"
-      "p3"
-      "phone"
-      "email"
-      "icons";
+@include respond-to("large") {
+  .footer {
+    background-color: $navy-blue;
+    padding: 66px 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 340px;
+    place-items: baseline;
+    grid-template-areas: "logo" "phone" "email" "icons" "p3" "input" "p";
+    color: $white;
+    @include h3;
 
     &__logo {
-      width: 200px;
+      grid-area: logo;
+      width: 96px;
+      svg path:nth-child(2) {
+        fill: white;
+      }
     }
-
-    &__p3 {
-      gap: 16px;
+    &__input {
+      grid-area: input;
+      display: flex;
+      gap: 40px;
+      margin-block-start: 40px;
+      flex-direction: row;
     }
-
     &__p {
-      gap: 16px;
+      @include p;
+      grid-area: p;
+      margin-bottom: 16px;
     }
 
-    &__icons {
-      justify-self: flex-start;
-      width: 24px;
+    &__phone {
+      grid-area: phone;
+      margin-block-start: 8px;
+      @include p2;
     }
 
     &__email {
-      width: 24px;
+      grid-area: email;
+      margin-block-start: 8px;
+      @include p2;
+    }
+
+    &__icons {
+      grid-area: icons;
+      margin-block-start: 24px;
+      display: -webkit-inline-box;
+    }
+
+    &__p3 {
+      grid-area: p3;
+      @include p3;
     }
   }
 }
