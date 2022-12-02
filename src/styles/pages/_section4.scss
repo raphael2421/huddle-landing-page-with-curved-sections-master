@@ -1,4 +1,10 @@
 .section4{
+    &__title1{
+        @include h2;
+    &__parra{
+        @include p;
+    }
+    }
     background: white;
     
 
