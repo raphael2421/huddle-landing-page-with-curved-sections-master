@@ -1,0 +1,13 @@
+.icons {
+  @include grid-centered(16px);
+  grid-template-columns: repeat(3, 1fr);
+
+  &__img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.icons2 {
+  @include flex(row, 16px);
+}

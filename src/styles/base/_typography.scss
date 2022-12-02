@@ -1,65 +1,59 @@
 //Typography
 $weights: (
-    "bold": 700,
-    "semibold": 600,
-    "regular": 400,
+  "bold": 700,
+  "semibold": 600,
+  "regular": 400,
 );
 
 @mixin headers($font-size, $line-height) {
-    font-weight: map-get($map: $weights, $key: "bold");
-    font-size: $font-size;
-    line-height: $line-height;
+  font-weight: map-get($map: $weights, $key: "bold");
+  font-size: $font-size;
+  line-height: $line-height;
 }
 
 @mixin body-footer($font-size, $line-height) {
-    font-weight: map-get($map: $weights, $key: "semibold");
-    font-size: $font-size;
-    line-height: $line-height;
+  font-weight: map-get($map: $weights, $key: "semibold");
+  font-size: $font-size;
+  line-height: $line-height;
 }
 
 @mixin body($font-size, $line-height) {
-    font-weight: map-get($map: $weights, $key: "regular");
-    font-size: $font-size;
-    line-height: $line-height;
+  font-weight: map-get($map: $weights, $key: "regular");
+  font-size: $font-size;
+  line-height: $line-height;
 }
 
 @mixin h1 {
-    @include headers(4.8rem, 7.2rem);
-    font-family: $font-title;
+  @include headers(4.8rem, 7.2rem);
+  font-family: $font-title;
 }
 
 @mixin p {
-    @include body(2rem, 3rem);
-    font-family: $font-paragraph;
+  @include body(2rem, 3rem);
+  font-family: $font-paragraph;
 }
 
 @mixin number {
-    @include header(9.6rem, 14.4rem);
-    font-family: $font-paragraph;
+  @include headers(9.6rem, 14.4rem);
+  font-family: $font-paragraph;
 }
 
 @mixin h2 {
-    @include headers(4rem, 6rem);
-    font-family: $font-title;
+  @include headers(4rem, 6rem);
+  font-family: $font-title;
 }
 
-
 @mixin p2 {
-    @include body(1.6rem, 2.4rem);
-    font-family: $font-paragraph;
+  @include body(1.6rem, 2.4rem);
+  font-family: $font-paragraph;
 }
 
 @mixin h3 {
-    @include headers(2.4rem, 3.6rem);
-    font-family: $font-title;
+  @include headers(2.4rem, 3.6rem);
+  font-family: $font-paragraph;
 }
 
 @mixin p3 {
-    @include body-footer(1.4rem, 2.4rem);
-    font-family: $font-paragraph;
-}
-
-@mixin p4 {
-    @include body(1.6rem, 2.4rem);
-    font-family: $font-paragraph;
+  @include body-footer(1.4rem, 2.4rem);
+  font-family: $font-paragraph;
 }

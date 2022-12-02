@@ -1,14 +1,15 @@
 //abstracts
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
-@import 'abstracts/breakpoints';
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/breakpoints";
 
-//base 
-@import 'base/base';
-@import 'base/typography';
+//base
+@import "base/base";
+@import "base/typography";
 
 //components
-@import "components/button"; 
+@import "components/button";
+@import "components/icons";
 
 //layout
-@import 'layout/footer';
+@import "layout/footer";
