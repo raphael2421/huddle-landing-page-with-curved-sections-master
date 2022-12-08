@@ -1,0 +1,14 @@
+.section5 {
+  @include flex(column, 40px);
+  align-items: center;
+  @include text-alignment;
+  padding-block-end: 252px;
+  &__title {
+    @include headers(2.4rem, 3.6rem);
+    font-family: $font-title;
+  }
+
+  &__btn {
+    max-width: 200px;
+  }
+}

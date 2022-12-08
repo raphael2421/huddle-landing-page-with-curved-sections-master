@@ -1,0 +1,78 @@
+.section {
+  margin-block-start: 140px; // variable default 0
+  margin-block-end: 126px; // variable default 0
+  padding: 0 28px;
+  @include flex(column, 40px);
+  align-items: center;
+  text-align: center;
+
+  &__img {
+    width: 280px;
+  }
+
+  &__header {
+    @include flex(column, 16px);
+  }
+
+  &__title {
+    @include headers(2rem, 3rem);
+    font-family: $font-title;
+  }
+
+  &__paragraph {
+    @include body(1.4rem, 2.1rem);
+    font-family: $font-paragraph;
+  }
+
+  &--withBg1 {
+    background-color: $light_blue; // because pseudoclases backgrounds required it
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100vw;
+      height: 98px; // variable
+      background-color: $white;
+      // add url as variable
+      background-image: url("../../images/bg-section-top-mobile-1.svg");
+      @include centeredBgImage;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100vw;
+      height: 35px; // variable
+      background-color: $white;
+      // add url as variable
+      background-image: url("../../images/bg-section-bottom-mobile-1.svg");
+      @include centeredBgImage;
+    }
+  }
+
+  &--withBg2 {
+    background-color: $light_blue; // because pseudoclases backgrounds required it
+    margin-block-end: 66px; // variable default 0
+    &::before {
+      content: "";
+      display: block;
+      width: 100vw;
+      height: 93px; // variable
+      background-color: $white;
+      // add url as variable
+      background-image: url("../../images/bg-section-top-mobile-2.svg");
+      @include centeredBgImage;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100vw;
+      height: 86px; // variable
+      background-color: $white;
+      // add url as variable
+      background-image: url("../../images/bg-section-bottom-mobile-2.svg");
+      @include centeredBgImage;
+    }
+  }
+}

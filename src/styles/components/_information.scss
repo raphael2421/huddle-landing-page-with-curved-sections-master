@@ -1,0 +1,17 @@
+.information {
+  @include flex(column, 1px);
+
+  &__img {
+    width: 36px;
+  }
+
+  &__number {
+    @include headers(6.1rem, 9.1rem);
+    font-family: $font-paragraph;
+  }
+
+  &__label {
+    @include body(1.5rem, 2.3rem);
+    font-family: $font-title;
+  }
+}

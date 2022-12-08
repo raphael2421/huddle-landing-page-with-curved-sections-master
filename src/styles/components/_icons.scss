@@ -1,0 +1,8 @@
+.icons {
+  display: flex;
+  gap: 18px;
+
+  svg path:hover {
+    fill: $blue_hover;
+  }
+}

@@ -1,0 +1,26 @@
+// .section3 {
+//   margin-block-start: 140px;
+//   margin-block-end: 126px;
+//   padding: 0 28px;
+//   @include flex(column, 40px);
+//   align-items: center;
+//   text-align: center;
+
+//   &__img {
+//     width: 280px;
+//   }
+
+//   &__header {
+//     @include flex(column, 16px);
+//   }
+
+//   &__title {
+//     @include headers(2rem, 3rem);
+//     font-family: $font-title;
+//   }
+
+//   &__paragraph {
+//     @include body(1.4rem, 2.1rem);
+//     font-family: $font-paragraph;
+//   }
+// }
