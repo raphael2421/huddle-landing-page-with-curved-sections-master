@@ -1,0 +1,30 @@
+.section1 {
+  @include flex(column, 24px);
+  align-items: center;
+  padding: 40px;
+
+  &__title {
+    @include headers(2.4rem, 3.6rem);
+    font-family: $font-title;
+    text-align: center;
+  }
+
+  &__paragraph {
+    @include body(1.4rem, 2.1rem);
+    font-family: $font-paragraph;
+    text-align: center;
+  }
+
+  &__btn {
+    margin-block-start: 24px; // total - gap
+  }
+
+  &__img {
+    margin-block-start: 80px;
+  }
+
+  &__info {
+    @include flex(column, 88px);
+    margin-block-start: 96px;
+  }
+}

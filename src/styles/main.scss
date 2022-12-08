@@ -1,2 +1,23 @@
+// abstracts
 @import "abstracts/variables";
-@import "components/button"; 
+@import "abstracts/mixins";
+@import "abstracts/breakpoints";
+
+// base
+@import "base/base";
+@import "base/typography";
+
+// components
+@import "components/logo";
+@import "components/button";
+@import "components/information";
+@import "components/section";
+@import "components/icons";
+@import "components/input";
+
+// layout
+@import "layout/header";
+@import "layout/footer";
+
+// pages
+@import "pages/home";

@@ -1,32 +1,39 @@
-.btn{
-  @include headers(2rem,3rem);
+.btn {
+  @include headers(1.2rem, 1.8rem);
   font-family: $font-paragraph;
- background-color: $pink; 
- border-radius: 40px;
- color:$white;
- border-style: none;
- padding: 25px 100px 25px 100px;
- &:hover {
-  background-color: $pink_hover;
-  cursor: pointer;
- }
- &--rectangular{
-  @include body(1.6rem, 2.4rem);
-  border-radius: 5px;
-  padding: 12px 41px 12px 41px;
+  border-radius: 40px;
+  padding: 1.1rem 4rem;
+  background-color: $pink;
+  color: $white;
+  border-style: none;
+  &:hover {
+    background-color: $pink_hover;
+    cursor: pointer;
+  }
+  &--rectangular {
+    @include body(1.6rem, 2.4rem);
+    padding: 12px 41px 12px 41px;
+    border-radius: 5px;
   }
   &--outlined {
-    @include body(1.6rem,1rem);
-    background-color: $white;
+    @include body(1rem, 1rem);
+    padding: 5px 17px;
     color: $pink;
-    border-radius: 20px;
     border-color: $pink;
     border-style: solid;
     border-width: 1px;
-    padding: 9px 30px 9px 30px;
     background-color: transparent;
-
-
   }
 
+  @include respond-to("large") {
+    @include headers(2rem, 3rem);
+    font-family: $font-paragraph;
+    border-radius: 40px;
+    padding: 25px 100px;
+
+    &__outlined {
+      @include body(1.6rem, 1rem);
+      padding: 9px 30px;
+    }
+  }
 }

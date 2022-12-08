@@ -1,0 +1,44 @@
+.section2 {
+  @include flex(column, 40px);
+  align-items: center;
+  text-align: center;
+  background-color: $light_blue;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 98px;
+    background-color: $white;
+    background-image: url("../../images/bg-section-top-mobile-1.svg");
+    @include centeredBgImage;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 35px;
+    background-color: $white;
+    background-image: url("../../images/bg-section-bottom-mobile-1.svg");
+    @include centeredBgImage;
+  }
+
+  &__img {
+    width: 280px;
+  }
+
+  &__header {
+    @include flex(column, 16px);
+  }
+
+  &__title {
+    @include headers(2rem, 3rem);
+    font-family: $font-title;
+  }
+
+  &__paragraph {
+    @include body(1.4rem, 2.1rem);
+    font-family: $font-paragraph;
+  }
+}
